@@ -1,11 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400italic,700,800");
 
-/*
-	Highlights by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -2657,7 +2652,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cd1a8;
+			background-color: #B04D6C;
 			border: 0;
 			box-shadow: none;
 			color: #ffffff !important;
@@ -2668,7 +2663,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9ed8b6;
+				background-color: #cc6384;
 			}
 
 			input[type="submit"].primary:active,
@@ -2975,6 +2970,45 @@ input, select, textarea {
 				}
 
 	}
+/* botton scroll up */
+#button {
+	display: inline-block;
+	background-color: #FF9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	  opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	padding-top: 7px;
+	font-size: 2rem;
+	color: #414070;
+  }
+  #button::after {
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
+  }
+  #button:hover {
+	cursor: pointer;
+	background-color: #fab144;
+	
+  }
+  #button:active {
+	background-color: #555;
+  }
+  #button.show {
+	opacity: 1;
+	visibility: visible;
+  }
 
 /* Small */
 
